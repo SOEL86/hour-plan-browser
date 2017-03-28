@@ -1,0 +1,113 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	line-height: 8vh;
+	font-size: 4vh;
+	font-family: sans-serif;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	overflow: hidden;
+	margin: 0;
+	margin: auto;
+}
+#mc-master {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-size: cover;
+	background-position: center;
+	border-top:1px solid black;
+	border-left:1px solid black;
+}
+#mc-clock {
+	position: relative;
+	width: 100%;
+	background: url(art/tile.png);
+	background-blend-mode: color-burn;
+	opacity: 0.5;
+	pointer-events: none;
+}
+#mc-clock-details {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+#mc-current-time {
+	position: absolute;
+	bottom: 0;
+	height: 80px;
+	width: 100%;
+	background: black;
+	color: white;
+	text-align: center;
+	font-size: 60px;
+	line-height: 70px;
+	pointer-events: all;
+}
+#mc-current-time:hover > span {
+	display: inline;
+}
+#mc-current-time > span {
+	display: none;
+	line-height: 25px;
+	font-size: 20px;
+}
+#mc-current-activity {
+	height: calc(100% - 80px);
+	width: 100%;
+}
+.mc-hour {
+	height: 8.3333333333vh;
+	width: 100%;
+	text-align: center;
+	float: left;
+	box-shadow: 0;
+	cursor: pointer;
+	border-bottom: 1px solid black;
+	border-right:1px solid black;
+	position: relative;
+}
+.mc-hour > div {
+	line-height: 4vh;
+	font-size: 3vh;
+}
+.mc-time {
+	width: 8.3333333333vh;
+	height: 8.3333333333vh;
+	float: left;
+	word-spacing: 8.33vw;
+	cursor: not-allowed;
+}
+.mc-description {
+	height: 8.3333333333vh;
+	margin-left: 8.3333333333vh;
+	margin-right: 8.3333333333vh;
+}
+textarea {
+	text-align: center;
+	color: inherit;
+	background: transparent;
+	font-size: inherit;
+	border: none;
+	padding: 0;
+	resize: none;
+	font-family: sans-serif;
+	height: 8.3333333333vh;
+	width: 100%;
+	overflow: hidden;
+}
+.mc-length {
+	float: right;
+	width: 8.3333333333vh;
+	height: 8.3333333333vh;
+	word-spacing: 50vw;
+	cursor: pointer;
+}

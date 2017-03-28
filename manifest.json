@@ -1,0 +1,14 @@
+{
+  "name": "Day Plan",
+  "description": "A quick way to plan track your day.",
+  "version": "1.0",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": {
+    "128": "icon-128.png"
+  }
+}

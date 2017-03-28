@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0"/>
+<script src="scripts/TweenMax.js"></script>
+<script src="scripts/Draggable.js"></script>
+<script src="scripts/jquery.js"></script>
+<script src="scripts/randomColor.js"></script>
+<link rel="stylesheet" href="styles/w3-colors.css">
+<link rel="stylesheet" href="DayPlan.css">
+
+<body>
+	<div id="mc-master">
+		<div class="mc-hour" data-time="0:00" data-description="" data-length="1" data-max-length="12" data-active="0" data-color=""></div>
+		<div class="mc-hour" data-time="0:05" data-description="" data-length="1" data-max-length="11" data-active="0" data-color=""></div>
+		<div class="mc-hour" data-time="0:10" data-description="" data-length="1" data-max-length="10" data-active="0" data-color=""></div>
+		<div class="mc-hour" data-time="0:15" data-description="" data-length="1" data-max-length="9" data-active="0" data-color=""></div>
+		<div class="mc-hour" data-time="0:20" data-description="" data-length="1" data-max-length="8" data-active="0" data-color=""></div>
+		<div class="mc-hour" data-time="0:25" data-description="" data-length="1" data-max-length="7" data-active="0" data-color=""></div>
+		<div class="mc-hour" data-time="0:30" data-description="" data-length="1" data-max-length="6" data-active="0" data-color=""></div>
+		<div class="mc-hour" data-time="0:35" data-description="" data-length="1" data-max-length="5" data-active="0" data-color=""></div>
+		<div class="mc-hour" data-time="0:40" data-description="" data-length="1" data-max-length="4" data-active="0" data-color=""></div>
+		<div class="mc-hour" data-time="0:45" data-description="" data-length="1" data-max-length="3" data-active="0" data-color=""></div>
+		<div class="mc-hour" data-time="0:50" data-description="" data-length="1" data-max-length="2" data-active="0" data-color=""></div>
+		<div class="mc-hour" data-time="0:55" data-description="" data-length="1" data-max-length="1" data-active="0" data-color=""></div>
+		<div id="mc-clock">
+			<div id="mc-clock-details">
+				<div id="mc-current-activity"></div>
+				<div id="mc-current-time"></div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="DayPlan.js" onload="new DayPlan('.mc-hour');"></script>
+	
+</body>
+
+</html>
